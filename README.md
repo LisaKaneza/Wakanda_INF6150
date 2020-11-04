@@ -1,8 +1,8 @@
 # Projet de session - Wakanda
 ## INF6150 - Génie Logiciel - Conduite de projets
-- Cours         : Génie Logiciel - Conduite de projets
-- Sigle           : INF6150
-- Session      : Automne 2020
+- Cours         : `Génie Logiciel - Conduite de projets`
+- Sigle           : `INF6150`
+- Session      : `Automne 2020`
 - Enseignant : `Hammad Ammar`
 
 ## Équipe 4 : Wakanda
