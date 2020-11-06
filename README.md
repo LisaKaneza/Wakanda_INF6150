@@ -10,7 +10,7 @@
 ###### Amayas TAMANI - TAMA29099505
 ###### Nefin SHNEWER - SHNN12589608
 ###### Annie ZONGO - ZONA12559605
-###### Lisa Steccy KANEZA - 
+###### Lisa Steccy KANEZA - KANL30589606
 
 ## Lien du site 
 http://www.tchalla.ga/
