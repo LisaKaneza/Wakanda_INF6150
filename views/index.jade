@@ -1,0 +1,82 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    link(rel='stylesheet', href='../stylesheets/accueil.css')
+    title BO
+    link(href='https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap', rel='stylesheet')
+  body
+    .content-page
+      nav
+        .logo
+          a(href='/')  T'Challa - Accueil
+        .nav-links
+          ul
+            li
+              a(href='/cours') Cours
+            li
+              a(href='/prof') Prof
+            li
+              a(href='/horaire') Horaire
+            li
+              a(href='/forum') Forum
+            li  
+              a(href='/ressources') Ressources
+        .burger
+          .ligne
+          .ligne
+          .ligne
+        .login
+          a#connexion
+            i.fa.fa-user.fa-1x(aria-hidden='true', style='color: whitesmoke;')
+        .connexion 
+          .close +
+          .case
+            .connexion-content
+              h2 Connexion 
+              form(action='/' method='POST') 
+                label(for='username') Nom d'utilisateur/Courriel
+                input(type="text" name='username' id="input")
+                label(for="password") Mot de passe
+                input(type="password" name='password' id="input")
+                a(href='/reinitmdp') Mot de passe oublié
+                .button
+                  input(type='button' onclick="window.location.href='/profile'" value='Connexion')
+            .inscription-content
+              h2 Inscription
+              form(action="/" method='POST')
+                label(for='email') Courriel
+                input(type="text" id="input")
+                label(for='username') Nom d'utilisateur
+                input(type="text" id="input")
+                label(for="password") Mot de passe
+                input(type="password" id="input")
+                .button 
+                  input(type="button" value='Inscrire')
+
+      .affichage
+        div#centre
+          .card_prof
+            h4 Les profs les plus fréquentes dans le programme
+            each enseignant in prof
+              h6 Nom: 
+              a(href="/rechercheProf?nom=" + enseignant.nom)= enseignant.nom
+          .card_forum
+            h4 Les sujets du forums les plus populaires
+            each discusion in forum 
+              h6 Titre:
+              a(href="/rechercheForum?titre=" + discusion.titre)=discusion.titre
+          .card_cours
+            h4 Les cours les plus fréquentes dans le programme
+            - var i = 0;
+            each lecon in cours
+              if i < 3
+                h6 Sigle:
+                a(href="/coursRecherche?sigle=" + lecon.sigle)= lecon.sigle
+                - i++; 
+
+      footer#footer-page
+        h4 © BacOverflow
+    script(src='../javascripts/accueil.js')
