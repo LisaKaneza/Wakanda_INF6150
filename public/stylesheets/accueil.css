@@ -1,0 +1,312 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Calibri', serif;
+}
+
+/* Navbar */ 
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1E90FF;
+    font-family: 'Calibri', serif;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover{
+      background-color: #FFF;
+      padding-top: 20px;
+      padding-bottom: 28px;
+      color: dark;
+}
+
+.logo{
+    color: whitesmoke;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+.logo a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.nav-links li{
+    display: inline;
+    margin-left: 60px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.burger{
+    display: none;
+    padding-right: 0px;
+    margin-right: 0em;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: whitesmoke;
+    margin: 5px;
+}
+
+@media screen and (max-width:1460px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 95vh;
+        top: 8vh;
+        background-color: #7288a8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+
+    .nav-links li{
+        display: flex;
+        padding: 40px;
+
+    }
+
+    .nav-links a {
+        font-size: 23px;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+/* Connexion/Inscription */
+
+.connexion{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.close{
+    position: absolute;
+    font-family: inherit;
+    flex-direction: column;
+    top: 0;
+    right: 20px;
+    font-size: 50px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.case{
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 1000px;
+    height: 50%;
+    position: relative;
+}
+
+.connexion-content{
+    width: 50%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.connexion-content::after{
+    content: "";
+    background: black;
+    height: 3px;
+    width: 80%;
+    display: block;
+    margin-top: 20px;
+}
+
+.inscription-content{
+    width: 50%;
+    text-align: left;
+}
+
+.case h2{
+    font-family: inherit;
+    font-size: 35px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.case label{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.case input{
+    padding: 5px;
+    display: block;
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: 5px;
+    width: 80%;
+} 
+
+.case a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: lighter;
+    padding-left: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.button input{
+    border-radius: 10px;
+    background-color: #1a5dc9;
+    color: whitesmoke;
+    border-color: whitesmoke;
+    cursor: pointer;
+}
+
+.button input:hover{
+    color: #1a5dc9;
+    background-color: whitesmoke;
+    border-color: #1a5dc9;
+}
+
+@media (min-width:760px){
+    .case{
+        flex-direction: row;
+    }
+
+    .connexion-content{
+        text-align: left;
+        margin-left: 1.5em;
+        margin-bottom: 50px;
+    }
+
+    .connexion-content::after{
+        display: none;
+    }
+
+    .inscription-content{
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+#centre {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    place-items: center;
+    padding: 200px;
+}
+
+#centre a {
+    text-decoration: none;
+    color: black;
+}
+
+.card_forum {
+    display: initial;
+    width: 300px;
+    height: auto;
+    border: solid 1px gray;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.card_prof{
+    display: initial;
+    width: 300px;
+    height: auto;
+    border: solid 1px gray;
+    padding: 50px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+.card_prof p{
+    display:inline;
+}
+
+.card_cours{
+    display: initial;
+    width: 300px;
+    height: auto;
+    border: solid 1px gray;
+    padding: 50px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Footer */
+.content-page{
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+}
+
+footer{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #333;
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+footer h4{
+    color: whitesmoke;
+    font-weight: normal;
+}

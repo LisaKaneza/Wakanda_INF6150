@@ -1,0 +1,293 @@
+.content-cours .h2{
+    font-weight: bold;
+    font-size: 45px;
+    padding: 40px;
+    text-align: center;
+}
+
+.cours{
+    display: flex;
+    flex-direction: column;
+}
+
+.cours .h1{
+    font-size: 35px;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.cours-recherche label{
+    font-size: 35px;  
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.cours-recherche input{
+    font-size: 20px;  
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.cours-recherche input[type="text"]{
+    width: 30%;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 5px;
+}
+
+/*.cours-recherche input[type="submit"]{
+    margin-left: 50px;
+    width: 60%;
+    background-color: #1a5dc9;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+    height: 45px;
+    cursor: pointer;
+}*/
+
+.top-recherche {
+    padding: 25px;
+    display: block;
+}
+
+.top-recherche table {
+    font-family: inherit;
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.top-recherche {
+    display: flex;
+    width: 50%;
+    height: auto;
+    border: solid 1px gray;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.top-recherche a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    color: black;
+}
+
+.top-recherche a:hover {
+    color: blue;
+}
+
+td.sigl {
+    position: absolute;
+    top: 5%;
+    left:40%;
+    right:50%;
+    margin-left:auto;
+    margin-top:auto;
+    font-weight: bold;
+    font-size: 45px;
+    padding: 40px;
+    text-align: center;
+}
+
+td.title {
+    position: absolute;
+    top: 15%;
+    left:36%;
+    margin-left:auto;
+    margin-top:auto;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+td.note {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    right: 80%;
+    margin-left: 10px;
+    margin-top: auto;
+    height: 70px;
+    width: 70px;
+    border: solid 1px gray;
+    padding: 20px;
+    margin: -5px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;  
+}
+
+td.comment {
+    position: relative;
+    left:25%;
+    right:20%;
+    top: 60px;
+    margin-left:auto;
+    margin-top:auto;
+    display: flex;
+    width: 50%;
+    height: auto;
+    border: solid 1px gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.comment-cours button {
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 40px;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+}
+
+.comment-cours button.b1 {
+    background-color: #4CAF50;
+    position: relative;
+    left:22%;
+}
+
+.comment-cours button.b2 {
+    background-color: #008CBA;
+}
+
+.comment-cours button:hover {
+    color: white;
+}
+
+.form-comment button {
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 40px;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+}
+
+a button.bN2 {
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 40px;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px;
+    position: relative;
+    left:15%;
+    top: -137px;
+}
+
+a button.bA2 {
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 40px;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px;
+    position: relative;
+    left:15%;
+    top: -137px;
+}
+
+.form-comment button.b1 {
+    background-color: #4CAF50;
+}
+
+a button.bN2 {
+    background-color: #ba0000;
+}
+
+a button.bA2 {
+    background-color: #ba0000;
+}
+
+.form-comment button:hover {
+    color: white;
+}
+
+a button:hover {
+    color: white;
+}
+
+.form-cours [type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-cours [type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-cours textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-cours {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+.form-note [type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-note textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-note {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

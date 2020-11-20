@@ -1,0 +1,164 @@
+.content-forum .h1{
+    font-weight: bold;
+    font-size: 45px;
+    padding: 40px;
+    text-align: center;
+}
+
+.forum{
+    display: flex;
+    flex-direction: column;
+}
+
+.forum .h1{
+    font-size: 35px;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.forum-recherche label{
+    font-size: 35px;  
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.forum-recherche input{
+    font-size: 20px;  
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.forum-recherche input[type="text"]{
+    width: 30%;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 5px;
+}
+
+.top-recherche {
+    padding: 25px;
+    display: block;
+}
+
+.top-recherche table {
+    font-family: inherit;
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.top-recherche {
+    display: flex;
+    width: 50%;
+    height: auto;
+    border: solid 1px gray;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.top-recherche a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    color: black;
+}
+
+.top-recherche a:hover {
+    color: blue;
+}
+
+.form-comment input {
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 40px;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+    background-color: #4CAF50;
+    position: relative;
+}
+
+.ajouter-forum button {
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 40px;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+}
+
+.ajouter-forum button.b2 {
+    background-color: #4CAF50;
+    position: relative;
+}
+
+
+.formulaire-forum [type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.commentaire-forum [type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulaire-forum, .commentaire-forum{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.titre {
+    top: 5%;
+    left:40%;
+    right:50%;
+    margin-left:auto;
+    margin-top:auto;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px;
+    text-align: center;
+}
+
+.carte-commentaire #name {
+    text-indent: 0px;
+    color: brown;
+}
+
+.carte-commentaire {
+    position: relative;
+    left:25%;
+    right:20%;
+    margin-left:auto;
+    margin-top:auto;
+    display: flex;
+    width: 50%;
+    height: auto;
+    border: solid 1px gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    text-indent: 50px;
+}

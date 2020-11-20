@@ -1,0 +1,91 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bitter', serif;
+}
+
+.form-content{
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 1000px;
+    height: 50%;
+    position: relative;
+}
+
+h2{
+    font-family: inherit;
+    font-size: 35px;
+    opacity: 0.8;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+
+.email{
+    text-align: left;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+label{
+    padding: 10px;
+    font-size: 23px;
+}
+
+input{
+    padding: 5px;
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+
+
+.buttons{
+    display: inline;
+}
+
+.buttons input[value='Annuler']{
+    font-size: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 40%;
+    border-radius: 10px;
+    background-color: #e39e07;
+    border-color: #e39e07;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.buttons input[value='Réinitialiser']{
+    width: 50%;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: #1a5dc9;
+    border-color: #1a5dc9;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.buttons input[value='Annuler']:hover{
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: #e39e07;
+}
+
+.buttons input[value='Réinitialiser']:hover{
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: #1a5dc9;
+}
