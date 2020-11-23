@@ -4,15 +4,17 @@ html(lang='fr')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    link(rel='stylesheet', href='../stylesheets/accueil.css')
+    link(rel='stylesheet', href='../stylesheets/main.css')
     title Bienvenue sur T'Challah
     link(href='https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap', rel='stylesheet')
+    
   body
-    .content-page
-      nav
+    header
+      .containermenu
         .logo
           a(href='http://www.tchalla.ga/')  T'Challah
-        .nav-links
+          
+        nav
           ul
             li
               a(href='/cours') Cours
@@ -24,35 +26,10 @@ html(lang='fr')
               a(href='/forum') Forum
             li  
               a(href='/ressources') Ressources
-        .burger
-          .ligne
-          .ligne
-          .ligne
-        .login
-          a#connexion
-            i.fa.fa-user.fa-1x(aria-hidden='true', style='color: whitesmoke;')
-        .connexion 
-          .close +
-          .case
-            .connexion-content
-              h2 Connexion 
-              form(action='/' method='POST') 
-                label(for='username') Nom d'utilisateur/Courriel
-                input(type="text" name='username' id="input")
-                label(for="password") Mot de passe
-                input(type="password" name='password' id="input")
-                a(href='/reinitmdp') Mot de passe oublié
-                .button
-                  input(type='button' onclick="window.location.href='/profile'" value='Connexion')
-            .inscription-content
-              h2 Inscription
-              form(action="/" method='POST')
-                label(for='email') Courriel
-                input(type="text" id="input")
-                label(for='username') Nom d'utilisateur
-                input(type="text" id="input")
-                label(for="password") Mot de passe
-                input(type="password" id="input")
-                .button 
-                  input(type="button" value='Inscrire')
+            li
+              a(href='/seconnecter') Se connecter
+            li 
+              a(href='/sinscrire') S'inscrire
+          
+
     block content

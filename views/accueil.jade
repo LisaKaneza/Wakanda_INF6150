@@ -1,13 +1,31 @@
 include header
 
-
-
 block content
 
+body
 
-include test
-  
-
-block content
+   div
+      .affichage
+        div#centre
+          .card_prof
+            h4 Les profs les plus fréquentes dans le programme
+            each enseignant in prof
+              h6 Nom: 
+              a(href="/rechercheProf?nom=" + enseignant.nom)= enseignant.nom
+          .card_forum
+            h4 Les sujets du forums les plus populaires
+            each discusion in forum 
+              h6 Titre:
+              a(href="/rechercheForum?titre=" + discusion.titre)=discusion.titre
+          .card_cours
+            h4 Les cours les plus fréquentes dans le programme
+            - var i = 0;
+            each lecon in cours
+              if i < 3
+                h6 Sigle:
+                a(href="/coursRecherche?sigle=" + lecon.sigle)= lecon.sigle
+                - i++; 
+  block content
       
 include footer
+

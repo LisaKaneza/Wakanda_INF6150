@@ -1,0 +1,63 @@
+include header
+
+  link(rel='stylesheet', href='../stylesheets/signup.css')
+  
+  block content
+
+  body
+  
+    .login-page
+      .form
+        h1 Inscription
+        br
+        p Veuillez remplir ce formulaire pour votre inscription sur le site
+        form(action="/" method='POST' class="login-form")
+          table(border='0' align="center")
+            tr
+              td
+                label(for='etudiant') Étudiant :
+              td
+                input(type="radio", name="etudiant", value="etudiant")
+              td 
+                label(for='professeur') Professeur :
+              td
+                input(type="radio", name="professeur", value="professeur")
+          table(border='0' align="center")
+            tr
+              td
+                label(for='nom') Nom :
+              td
+                input(type="text" id="input")
+            tr
+              td 
+                label(for='prenom') Prénom :
+              td 
+                input(type="text" id="input")
+            tr
+              td 
+                label(for='courriel') Courriel :
+              td 
+                input(type="text" id="input")
+            tr
+              td 
+                label(for='user') Nom d'utilisateur :
+              td 
+                input(type="text" id="input")
+            tr
+              td 
+                label(for='password') Mot de passe :
+              td 
+                input(type="password" id="input")
+            tr
+              td(colspan="2")  
+               input(type="submit" value='valider' id='btnSignup')
+        
+        p(id='message')
+          a(href='/seconnecter') Déjà un compte ?
+        p(id='message')
+          a(href='http://www.tchalla.ga/') Retour à l'accueil
+  
+  block content
+
+
+include footer

@@ -1,0 +1,194 @@
+body{
+  margin: 0;
+  background: #FFF;
+  font-family:'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+.containermenu{
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+/* Menu */
+
+header{
+  background: #009999;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo{
+  float:left; 
+  color: whitesmoke;
+  letter-spacing: 5px;
+  font-size: 35px;
+  padding: 10px 0;
+}
+
+.logo a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  
+  position: relative;
+}
+
+nav a{
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover{
+ color: #444; 
+}
+
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #444;
+  
+  position: absolute;
+  bottom: -20px;
+  width: 0%;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+/* Responsive */
+
+@media screen and (max-width:1460px){
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        position: absolute;
+        right: 0px;
+        height: 95vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+
+    nav li{
+        display: flex;
+        padding: 40px;
+    }
+
+    nav a {
+        font-size: 23px;
+    }
+
+    burger{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+
+/* Footer */
+
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #444;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  height: 70px;
+}
+
+.footer h4{
+  padding-top: 15px;
+}
+
+/* tableau affichage */
+
+#centre {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    place-items: center;
+    padding: 200px;
+}
+
+#centre a {
+    text-decoration: none;
+    color: black;
+}
+
+.card_forum {
+    display: initial;
+    width: 300px;
+    height: auto;
+    border: solid 1px gray;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.card_prof{
+    display: initial;
+    width: 300px;
+    height: auto;
+    border: solid 1px gray;
+    padding: 50px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+.card_prof p{
+    display:inline;
+}
+
+.card_cours{
+    display: initial;
+    width: 300px;
+    height: auto;
+    border: solid 1px gray;
+    padding: 50px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}

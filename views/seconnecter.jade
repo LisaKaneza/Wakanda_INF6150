@@ -1,0 +1,33 @@
+include header
+
+  link(rel='stylesheet', href='../stylesheets/signin.css')
+  
+  block content
+
+  body
+  
+    .login-page
+      .form
+        h1 Connexion
+        br
+        form(action="/" method='POST' class="login-form")
+          table(border='0' align="center")
+            tr
+              td
+                input(type="text" id="input" placeholder="Courriel")
+            tr
+              td 
+                input(type="password" id="input" placeholder="Mot de Passe")
+            tr
+              td(colspan="2")  
+               input(type='submit' onclick="window.location.href='/profile'" value='Connexion' id='Btnlog')
+        
+        p(id='message')
+          a(href='/reinitmdp') Mot de passe oublié
+        p(id='message')
+          a(href='http://www.tchalla.ga/') Retour à l'accueil
+  
+  block content
+
+
+include footer
