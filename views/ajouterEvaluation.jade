@@ -1,0 +1,169 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    link(rel='stylesheet', href='../stylesheets/accueil.css')
+    link(rel='stylesheet', href='../stylesheets/ressources.css')
+    link(rel='stylesheet', href='../stylesheets/cours.css')
+    title BO
+    link(href='https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap', rel='stylesheet')
+  body
+    .content-page
+      nav
+        .logo
+          a(href='/')  BacOverflow
+        .nav-links
+          ul
+            li
+              a(href='/cours') Cours
+            li
+              a(href='/prof') Prof
+            li
+              a(href='/horaire') Horaire
+            li
+              a(href='/forum') Forum
+            li  
+              a(href='/ressources') Ressources
+        .burger
+          .ligne
+          .ligne
+          .ligne
+        .login
+          a#connexion
+            i.fa.fa-user.fa-1x(aria-hidden='true', style='color: whitesmoke;')
+        .connexion 
+          .close +
+          .case
+            .connexion-content
+              h2 Connexion 
+              form(action='/' method='POST') 
+                label(for='username') Nom d'utilisateur/Courriel
+                input(type="text" name='username' id="input")
+                label(for="password") Mot de passe
+                input(type="password" name='password' id="input")
+                a(href='/reinitmdp') Mot de passe oublié
+                .button
+                  input(type='button' onclick="window.location.href='/profile'" value='Connexion')
+            .inscription-content
+              h2 Inscription
+              form(action="/" method='POST')
+                label(for='email') Courriel
+                input(type="text" id="input")
+                label(for='username') Nom d'utilisateur
+                input(type="text" id="input")
+                label(for="password") Mot de passe
+                input(type="password" id="input")
+                .button 
+                  input(type="button" value='Inscrire')
+
+                h2 /valuation de l<enseignant
+      br
+      .form-note
+          .cours
+            .bulgy-radios
+              form(action='/ajouterEvaluation' method='POST' id="survey-form")
+                Pour Pour chacun des éléments suivant, veuillez évaluez l'enseignant sur une échelle de 1 à 5 ou 1 correspond à Mauvais et 5 correspond à Excellent
+              
+                <fieldset>
+                label(for='Organisation')  La préparation et l'organisation de l'enseignant pour son cours
+                br
+                br
+                <input type="radio" name="Organisation" value=1 required> 1
+                &nbsp;
+                <input type="radio" name="Organisation" value=2> 2
+                &nbsp;
+                <input type="radio" name="Organisation" value=3> 3
+                &nbsp;
+                <input type="radio" name="Organisation" value=4> 4 
+                &nbsp;
+                <input type="radio" name="Organisation" value=5> 5
+                &nbsp;
+                </fieldset>
+              
+                <fieldset>
+                label(for='Explications')  Clareté des explications
+                br
+                br
+                <input type="radio" name="Explications" value=1 required> 1
+                &nbsp;
+                <input type="radio" name="Explications" value=2> 2
+                &nbsp;
+                <input type="radio" name="Explications" value=3> 3
+                &nbsp;
+                <input type="radio" name="Explications" value=4> 4 
+                &nbsp;
+                <input type="radio" name="Explications" value=5> 5
+                &nbsp;
+                </fieldset>
+               
+                <fieldset>
+                label(for='Disponibilité')  Disponibilité de l'enseignant pour aider les élève
+                br
+                br
+                <input type="radio" name="Disponibilité" value=1 required> 1
+                &nbsp;
+                <input type="radio" name="Disponibilité" value=2> 2
+                &nbsp;
+                <input type="radio" name="Disponibilité" value=3> 3
+                &nbsp;
+                <input type="radio" name="Disponibilité" value=4> 4 
+                &nbsp;
+                <input type="radio" name="Disponibilité" value=5> 5
+                &nbsp;
+                </fieldset>
+                
+                <fieldset> 
+                label(for='Dynamisme')  Dynamisme de l'enseignant
+                br
+                br
+                <input type="radio" name="Dynamisme" value=1 required> 1
+                &nbsp;
+                <input type="radio" name="Dynamisme" value=2> 2
+                &nbsp;
+                <input type="radio" name="Dynamisme" value=3> 3
+                &nbsp;
+                <input type="radio" name="Dynamisme" value=4> 4 
+                &nbsp;
+                <input type="radio" name="Dynamisme" value=5> 5
+                &nbsp;
+                </fieldset>
+                
+                <fieldset>
+                label(for='Charge')  Respect de la charge de travail mentionné dans la desctiption du cours
+                br
+                br
+                <input type="radio" name="Charge" value=1 required> 1
+                &nbsp;
+                <input type="radio" name="Charge" value=2> 2
+                &nbsp;
+                <input type="radio" name="Charge" value=3> 3
+                &nbsp;
+                <input type="radio" name="Charge" value=4> 4 
+                &nbsp;
+                <input type="radio" name="Charge" value=5> 5
+                &nbsp;
+                </fieldset>
+                
+                <fieldset>
+                label(for='Feedback')  Bon feedback de l'enseignant lors de la correction des travaux et examens
+                br
+                br
+                <input type="radio" name="Feedback" value=1 required> 1
+                &nbsp;
+                <input type="radio" name="Feedback" value=2> 2
+                &nbsp;
+                <input type="radio" name="Feedback" value=3> 3
+                &nbsp;
+                <input type="radio" name="Feedback" value=4> 4 
+                &nbsp;
+                <input type="radio" name="Feedback" value=5> 5
+                &nbsp;
+                </fieldset>
+                .form-comment
+                    button(class="b1", onclick="getEval()") Soummettre
+              a(href='/prof')
+                button(class="bN2") Annuler
+                </form>
+                
