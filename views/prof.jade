@@ -1,0 +1,84 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    link(rel='stylesheet', href='../stylesheets/accueil.css')
+    link(rel='stylesheet', href='../stylesheets/ressources.css')
+    link(rel='stylesheet', href='../stylesheets/prof.css')
+    title BO
+    link(href='https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap', rel='stylesheet')
+  body
+    .content-page
+      nav
+        .logo
+          a(href='/')  BacOverflow
+        .nav-links
+          ul
+            li
+              a(href='/cours') Cours
+            li
+              a(href='/prof') Prof
+            li
+              a(href='/horaire') Horaire
+            li
+              a(href='/forum') Forum
+            li  
+              a(href='/ressources') Ressources
+        .burger
+          .ligne
+          .ligne
+          .ligne
+        .login
+          a#connexion
+            i.fa.fa-user.fa-1x(aria-hidden='true', style='color: whitesmoke;')
+        .connexion 
+          .close +
+          .case
+            .connexion-content
+              h2 Connexion 
+              form(action='/' method='POST') 
+                label(for='username') Nom d'utilisateur/Courriel
+                input(type="text" name='username' id="input")
+                label(for="password") Mot de passe
+                input(type="password" name='password' id="input")
+                a(href='/reinitmdp') Mot de passe oublié
+                .button
+                  input(type='button' onclick="window.location.href='/profile'" value='Connexion')
+            .inscription-content
+              h2 Inscription
+              form(action="/" method='POST')
+                label(for='email') Courriel
+                input(type="text" id="input")
+                label(for='username') Nom d'utilisateur
+                input(type="text" id="input")
+                label(for="password") Mot de passe
+                input(type="password" id="input")
+                .button 
+                  input(type="button" value='Inscrire')
+
+      .content-prof
+        .prof
+        .prof-recherche
+          br
+          form(action="/rechercheProf" method="GET")
+            label(for="nom") Nom
+            input(type="text" maxlength="20" name="nom")
+            input(type="submit" value="Rechercher")
+
+      .top-recherche 
+        .prof
+          .h1 Top Profs
+          table
+            each pr in prof
+              tr
+                a(href="/rechercheProf?nom=" + pr.nom)= pr.nom
+
+      .comment-prof
+        a(href="/nouveauProf")
+          button(class="b2") Ajouter prof
+              
+      footer#footer-page
+        h4 © BacOverflow
+      script(src='../javascripts/accueil.js')
